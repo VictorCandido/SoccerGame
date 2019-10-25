@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 775b7544e0a31af41aa18952d318305f
+  - enabled: 1
+    path: Assets/Scenes/SoccerGame.unity
+    guid: 91befa6cfabb96f4eb6d976ee972d9cc
+  - enabled: 1
+    path: Assets/Scenes/Vitoria 1.unity
+    guid: 299be5d3ae50c324e9d6e061b376a224
+  - enabled: 1
+    path: Assets/Scenes/Vitoria 2.unity
+    guid: 904e8439475e62c41b56e6d7208c56a4
   m_configObjects: {}

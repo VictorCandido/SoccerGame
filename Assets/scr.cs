@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class scr : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class scr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+
         if (player == "1")
         {
             if (Input.GetKey(KeyCode.D))
@@ -32,7 +38,12 @@ public class scr : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.W))
             {
-                rb2d.AddForce(Vector3.up * 300000);   
+                rb2d.AddForce(Vector3.up * 300000);
+            }
+
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                rb2d.AddForce(Vector3.down * 300000);
             }
         }
         
@@ -51,6 +62,11 @@ public class scr : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb2d.AddForce(Vector3.up * 300000);
+            }
+
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                rb2d.AddForce(Vector3.down * 300000);
             }
         }
         
